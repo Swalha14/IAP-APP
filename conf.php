@@ -19,7 +19,7 @@ $conf['site_lang'] = 'en';
 $conf['mail_type'] = 'smtp';
 $conf['smtp_host'] = 'smtp.gmail.com';
 $conf['smtp_user'] = 'swalha.ahmed@strathmore.edu';
-$conf['smtp_pass'] = 'sqkt aqdt fkwd nhwo'; 
+$conf['smtp_pass'] = ''; 
 $conf['smtp_port'] = 465; // or 587
 $conf['smtp_secure'] = 'ssl'; // or 'tls'
 
