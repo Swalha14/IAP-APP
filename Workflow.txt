@@ -1,0 +1,89 @@
+PS C:\Apache24\htdocs\IAP-APP> git add .
+PS C:\Apache24\htdocs\IAP-APP> git commit -m "Initial code"
+
+PS C:\Apache24\htdocs\IAP-APP> git push
+
+
+
+PS C:\Apache24\htdocs\IAP-APP> git add .
+PS C:\Apache24\htdocs\IAP-APP> git commit -m "Create Autoload class"
+[main 0910922] Create Autoload class
+ 1 file changed, 23 insertions(+)
+ create mode 100644 Layouts/ClassAutoLoad.php       
+PS C:\Apache24\htdocs\IAP-APP> git push
+
+
+
+PS C:\Apache24\htdocs\IAP-APP> git add .
+PS C:\Apache24\htdocs\IAP-APP> git commit -m "Configuration file"
+[main abfa9bd] Configuration file
+ 2 files changed, 35 insertions(+)
+ rename Layouts/ClassAutoLoad.php => ClassAutoLoad.php (100%)
+ create mode 100644 conf.php
+PS C:\Apache24\htdocs\IAP-APP> git push
+
+
+
+PS C:\Apache24\htdocs\IAP-APP> git add .
+PS C:\Apache24\htdocs\IAP-APP> git commit -m "Signin.php file"
+[main 90d95af] Signin.php file
+ 1 file changed, 8 insertions(+)
+ create mode 100644 signin.php
+PS C:\Apache24\htdocs\IAP-APP> git push
+
+
+PS C:\Apache24\htdocs\IAP-APP\Plugins> git clone https://github.com/PHPMailer/PHPMailer.git
+>>
+Cloning into 'PHPMailer'...
+remote: Enumerating objects: 20848, done.
+Receiving objects:   6% (1251/20848), 512.01 KiB | 1Receiving objects:   7% (1460/20848), 512.01 KiB | 1Receiving objects:   8% (1668/20848), 512.01 KiB | 1Receiving objects:   9% (1877/20848), 512.01 KiB | 1Receiving objects:  10% (2085/20848), 512.01 KiB | 1Receiving objects:  11% (2294/20848), 512.01 KiB | 1Receiving objects:  12% (2502/20848), 512.01 KiB | 1Receiving objects:  13% (2711/20848), 512.01 KiB | 1Receiving objects:  14% (2919/20848), 512.01 KiB | 1Receiving objects:  14% (2990/20848), 512.01 KiB | 1Receiving objects:  15% (3128/20848), 1.04 MiB | 949Receiving objects:  16% (3336/20848), 1.04 MiB | 949Receiving objects:  17% (3545/20848), 1.04 MiB | 949Receiving objects:  18% (3753/20848), 1.04 MiB | 949Receiving objects:  19% (3962/20848), 2.01 MiB | 1.2Receiving objects:  19% (4093/20848), 2.01 MiB | 1.2Receiving objects:  20% (4170/20848), 3.11 MiB | 1.4Receiving objects:  21% (4379/20848), 3.11 MiB | 1.4Receiving objects:  22% (4587/20848), 3.85 MiB | 1.4Receiving objects:  22% (4601/20848), 3.85 MiB | 1.4Receiving objects:  23% (4796/20848), 5.04 MiB | 1.5Receiving objects:  24% (5004/20848), 5.04 MiB | 1.5Receiving objects:  25% (5212/20848), 5.04 MiB | 1.5Receiving objects:  25% (5383/20848), 6.26 MiB | 1.6Receiving objects:  26% (5421/20848), 6.26 MiB | 1.6Receiving objects:  27% (5629/20848), 6.26 MiB | 1.6Receiving objects:  28% (5838/20848), 6.26 MiB | 1.6Receiving objects:  29% (6046/20848), 8.11 MiB | 1.8Receiving objects:  30% (6255/20848), 8.11 MiB | 1.8Receiving objects:  31% (6463/20848), 8.11 MiB | 1.8Receiving objects:  32% (6672/20848), 8.11 MiB | 1.8Receiving objects:  33% (6880/20848), 8.11 MiB | 1.8Receiving objects:  34% (7089/20848), 8.11 MiB | 1.8Receiving objects:  35% (7297/20848), 9.84 MiB | 2.0Receiving objects:  35% (7472/20848), 9.84 MiB | 2.0Receiving objects:  36% (7506/20848), 9.84 MiB | 2.0Receiving objects:  37% (7714/20848), 9.84 MiB | 2.0Receiving objects:  38% (7923/20848), 11.56 MiB | 2.Receiving objects:  39% (8131/20848), 11.56 MiB | 2.Receiving objects:  40% (8340/20848), 11.56 MiB | 2.Receiving objects:  41% (8548/20848), 11.56 MiB | 2.Receiving objects:  42% (8757/20848), 11.56 MiB | 2.Receiving objects:  43% (8965/20848), 13.37 MiB | 2.Receiving objects:  44% (9174/20848), 13.37 MiB | 2.Receiving objects:  44% (9238/20848), 13.37 MiB | 2.Receiving objects:  45% (9382/20848), 13.37 MiB | 2.Receiving objects:  46% (9591/20848), 13.37 MiB | 2.Receiving objects:  47% (9799/20848), 15.18 MiB | 2.Receiving objects:  48% (10008/20848), 15.18 MiB | 2Receiving objects:  49% (10216/20848), 15.18 MiB | 2Receiving objects:  50% (10424/20848), 16.85 MiB | 2Receiving objects:  50% (10569/20848), 16.85 MiB | 2Receiving objects:  51% (10633/20848), 16.85 MiB | 2Receiving objects:  52% (10841/20848), 16.85 MiB | 2Receiving objects:  53% (11050/20848), 17.61 MiB | 2Receiving objects:  54% (11258/20848), 17.61 MiB | 2Receiving objects:  55% (11467/20848), 18.57 MiB | 2Receiving objects:  55% (11581/20848), 18.57 MiB | 2Receiving objects:  56% (11675/20848), 18.57 MiB | 2Receiving objects:  57% (11884/20848), 18.57 MiB | 2Receiving objects:  58% (12092/20848), 18.57 MiB | 2Receiving objects:  59% (12301/20848), 18.57 MiB | 2Receiving objects:  60% (12509/20848), 19.68 MiB | 2Receiving objects:  61% (12718/20848), 19.68 MiB | 2Receiving objects:  62% (12926/20848), 19.68 MiB | 2Receiving objects:  63% (13135/20848), 19.68 MiB | 2Receiving objects:  64% (13343/20848), 19.68 MiB | 2Receiving objects:  65% (13552/20848), 19.68 MiB | 2Receiving objects:  66% (13760/20848), 19.68 MiB | 2Receiving objects:  67% (13969/20848), 19.68 MiB | 2Receiving objects:  68% (14177/20848), 21.14 MiB | 2Receiving objects:  69% (14386/20848), 21.14 MiB | 2Receiving objects:  69% (14485/20848), 21.14 MiB | 2Receiving objects:  70% (14594/20848), 21.14 MiB | 2Receiving objects:  71% (14803/20848), 21.14 MiB | 2Receiving objects:  72% (15011/20848), 21.14 MiB | 2Receiving objects:  73% (15220/20848), 21.14 MiB | 2Receiving objects:  74% (15428/20848), 22.24 MiB | 2Receiving objects:  75% (15636/20848), 22.24 MiB | 2Receiving objects:  76% (15845/20848), 22.24 MiB | 2Receiving objects:  77% (16053/20848), 22.24 MiB | 2Receiving objects:  78% (16262/20848), 22.24 MiB | 2Receiving objects:  79% (16470/20848), 22.24 MiB | 2Receiving objects:  80% (16679/20848), 22.24 MiB | 2Receiving objects:  81% (16887/20848), 22.24 MiB | 2Receiving objects:  82% (17096/20848), 22.24 MiB | 2Receiving objects:  83% (17304/20848), 22.24 MiB | 2Receiving objects:  84% (17513/20848), 22.24 MiB | 2Receiving objects:  85% (17721/20848), 22.24 MiB | 2Receiving objects:  86% (17930/20848), 22.24 MiB | 2Receiving objects:  86% (17990/20848), 22.24 MiB | 2Receiving objects:  87% (18138/20848), 23.98 MiB | 2Receiving objects:  88% (18347/20848), 23.98 MiB | 2Receiving objects:  89% (18555/20848), 23.98 MiB | 2Receiving objects:  90% (18764/20848), 23.98 MiB | 2Receiving objects:  91% (18972/20848), 23.98 MiB | 2Receiving objects:  92% (19181/20848), 23.98 MiB | 2Receiving objects:  93% (19389/20848), 23.98 MiB | 2Receiving objects:  94% (19598/20848), 23.98 MiB | 2Receiving objects:  95% (19806/20848), 23.98 MiB | 2Receiving objects:  96% (20015/20848), 23.98 MiB | 2Receiving objects:  97% (20223/20848), 23.98 MiB | 2Receiving objects:  98% (20432/20848), 23.98 MiB | 2Receiving objects:  99% (20640/20848), 23.98 MiB | 2remote: Total 20848 (delta 0), reused 0 (delta 0), pack-reused 20848 (from 1)
+Receiving objects: 100% (20848/20848), 23.98 MiB | 2Receiving objects: 100% (20848/20848), 25.09 MiB | 2.41 MiB/s, done.
+Resolving deltas: 100% (11032/11032), done.
+
+
+PS C:\Apache24\htdocs\IAP-APP\Plugins> cd PHPMailer
+
+PS C:\Apache24\htdocs\IAP-APP\Plugins\PHPMailer> composer update
+Loading composer repositories with package information
+Updating dependencies
+Package operations: 40 installs, 0 updates, 0 removals
+  
+
+
+PS C:\Apache24\htdocs\IAP-APP\Plugins\PHPMailer> cd ../..                                               
+>>
+PS C:\Apache24\htdocs\IAP-APP> git add .
+warning: adding embedded git repository: Plugins/PHPMailer
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+
+
+
+PS C:\Apache24\htdocs\IAP-APP> git add .
+PS C:\Apache24\htdocs\IAP-APP> git commit -m "Creating an email object"
+[main 5e071f7] Creating an email object
+ 1 file changed, 18 insertions(+)
+ create mode 100644 try_mail.php
+PS C:\Apache24\htdocs\IAP-APP> git push
+
+
+PS C:\Apache24\htdocs\IAP-APP> git add .
+PS C:\Apache24\htdocs\IAP-APP> git commit -m "Mail sending with customized username and saving to database"
+[main 21cceba] Mail sending with customized username and saving to database
+ 1 file changed, 61 insertions(+)
+ create mode 100644 signup_process.php
+PS C:\Apache24\htdocs\IAP-APP> git push
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.15 KiB | 1.15 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Swalha14/IAP-APP.git
+   5e071f7..21cceba  main -> main
+
