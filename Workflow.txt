@@ -87,3 +87,18 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/Swalha14/IAP-APP.git
    5e071f7..21cceba  main -> main
 
+PS C:\Apache24\htdocs\IAP-APP> git add .
+PS C:\Apache24\htdocs\IAP-APP> git commit -m "Displaying user list & Workflow text & deleting unwanted phpmailer files"
+[main 847bfcc] Displaying user list & Workflow text
+ 101 files changed, 114 insertions(+), 4412 deletions(-)
+ 
+PS C:\Apache24\htdocs\IAP-APP> git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 2.64 KiB | 902.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Swalha14/IAP-APP.git
+   21cceba..847bfcc  main -> main

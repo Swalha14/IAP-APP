@@ -1,8 +1,8 @@
 <?php
 // Site Information
-$conf['site_name'] = 'ICS C Community';
+$conf['site_name'] = 'Trial App';
 $conf['site_url'] = 'http://localhost';
-$conf['admin_email'] = 'admin@icsccommunity.com';
+$conf['admin_email'] = 'admin@trialapp.com';
 
 // Database Configuration
 $conf['db_type'] = 'pdo';
