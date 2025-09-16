@@ -20,7 +20,7 @@ class form
             <?php
              $this->submit_btn("Sign Up","signup"); 
              ?>
-            <a href="./">Already have an account? Log in</a>
+            <a href="signin.php">Already have an account? Log in</a>
         </form>
         <?php
     }
@@ -36,20 +36,22 @@ class form
 
 
 
-    public function login() {
+   public function signin() {
         ?>
-        <form method="post" action="">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br><br>
-           <?php
-             $this->submit_btn("Log In","login"); 
-             ?>
-            <a href="./">Don't have an account? Sign up</a>
-        </form>
+<h1>Sign In</h1>
+<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text"></div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+          <?php $this->submit_btn("Sign In", "signin"); ?> 
+          <a href="signup.php">Don't have an account? Sign up</a>
+</form>
         <?php
     }
 }

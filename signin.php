@@ -1,8 +1,10 @@
 <?php
 // Include the ClassAutoLoad Method
 require_once 'ClassAutoLoad.php';
-$layout->header($conf);
 
-$form->login();
-$layout->footer($conf);
+$Objlayout->header($conf);
+$Objlayout->nav($conf);
+$Objlayout->banner($conf);
+$Objlayout->form_content($conf, $Objform);
+$Objlayout->footer($conf);
 ?>
