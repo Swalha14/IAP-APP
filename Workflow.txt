@@ -102,3 +102,20 @@ PS C:\Apache24\htdocs\IAP-APP> git commit -m "Modifying code and fixing errors"
 [main 8f3e366] Modifying code and fixing errors
  3 files changed, 32 insertions(+), 11 deletions(-)
 PS C:\Apache24\htdocs\IAP-APP> git push
+
+
+PS C:\Apache24\htdocs\IAP-APP> git add .
+PS C:\Apache24\htdocs\IAP-APP> git commit -m "Implementing Bootstrap"
+[main f38ebb6] Implementing Bootstrap
+ 6 files changed, 124 insertions(+), 29 deletions(-)
+ create mode 100644 signup.php
+PS C:\Apache24\htdocs\IAP-APP> git push
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (10/10), 2.66 KiB | 303.00 KiB/s, done.
+Total 10 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/Swalha14/IAP-APP.git
+   354fcd0..f38ebb6  main -> main

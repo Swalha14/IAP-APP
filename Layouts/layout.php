@@ -13,7 +13,7 @@ class layout
       <meta name="description" content="">
       <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
       <meta name="generator" content="Astro v5.13.2">
-      <title>Nol</title>
+      <title>Trial App</title>
       
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
       
