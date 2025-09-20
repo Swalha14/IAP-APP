@@ -1,6 +1,6 @@
 <?php
 // Site Information
-$conf['site_name'] = 'Trial App';
+$conf['site_name'] = 'Swalha Trial App';
 $conf['site_url'] = 'http://localhost';
 $conf['admin_email'] = 'admin@trialapp.com';
 
