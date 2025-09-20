@@ -24,11 +24,12 @@ class form
         </form>
         <?php
     }
+    
 
     private function submit_btn($value,$name)
     {
         ?>
-        <button type="submit" name="<?php echo $name;?>" value="<?php echo $value; ?>"><?php echo $value; ?></button>
+        <button  class="btn btn-primary btn-lg"  type="button" name="<?php echo $name;?>" value="<?php echo $value; ?>"><?php echo $value; ?></button>
         <?php
     }
 
