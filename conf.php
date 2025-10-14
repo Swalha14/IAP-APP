@@ -5,7 +5,7 @@ $conf['site_url'] = 'http://localhost';
 $conf['admin_email'] = 'admin@trialapp.com';
 
 // Database Configuration
-$conf['db_type'] = 'pdo';
+$conf['db_type'] = 'PDO';
 $conf['db_host'] = 'localhost';
 $conf['db_port'] = 3307;   // custom MariaDB port
 $conf['db_user'] = 'root';
@@ -30,6 +30,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     die("Database connection failed: " . $e->getMessage());
+
 }
 ?>
 

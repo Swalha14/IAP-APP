@@ -1,16 +1,23 @@
 <?php
-require_once 'ClassAutoLoad.php';   
+// Display errors 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
+require_once 'ClassAutoLoad.php';  
 
 if (isset($_POST['signup'])) {
-    // Collect form data
+
     $username = trim($_POST['username']);
     $email = trim($_POST['email']);
     $password = $_POST['password'];
 
-   
+    //  validation 
     if (empty($username) || empty($email) || empty($password)) {
         die("All fields are required!");
+    }
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        die("Invalid email address.");
     }
 
     try {
@@ -25,38 +32,35 @@ if (isset($_POST['signup'])) {
         
         $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
-        // Insert into DB
-        $stmt = $conn->prepare("INSERT INTO users (username, email, password) 
-                                VALUES (:username, :email, :password)");
+        //Insert into database
+        $stmt = $conn->prepare("
+            INSERT INTO users (username, email, password) 
+            VALUES (:username, :email, :password)
+        ");
         $stmt->execute([
             ':username' => $username,
             ':email' => $email,
             ':password' => $hashedPassword
         ]);
 
-        // Prepare welcome email
+        //  Prepare welcome email
         $mailContent = [
             'name_from'  => $conf['site_name'],
             'email_from' => $conf['smtp_user'],  
             'name_to'    => $username,
             'email_to'   => $email,
-            'subject'    => 'Welcome to ' . $conf['site_name'].' Account Verification!', 
+            'subject'    => 'Welcome to ' . $conf['site_name'].' - Account Verification', 
             'body'       => "Hello $username,<br><br>
                              Welcome to <b>{$conf['site_name']}</b>!<br>
-                             <p>You are recieving this email beacause you requested an account on Trial App.</p>
-                             <p>In order to use this account you need to 
-                            <a href='http://yourdomain.com/verify.php?email=$email'>Click Here</a> 
-                            to complete the registration process.</p>
-                                <p>If you did not request this account, please ignore this email.</p>
-                             <br>
-                             
+                             Please verify your account by clicking the link below:<br>
+                             <a href='http://yourdomain.com/verify.php?email=$email'>Verify My Account</a><br><br>
                              Regards,<br>{$conf['site_name']} Team"
         ];
 
-        
+        //  Send email 
         $ObjSendMail->Send_Mail($conf, $mailContent);
 
-        echo " Registration successful! A welcome email has been sent to $email";
+        echo "<p style='color:green;'>Registration successful! A welcome email has been sent to <b>$email</b>.</p>";
 
     } catch (PDOException $e) {
         die("Database error: " . $e->getMessage());
@@ -64,4 +68,4 @@ if (isset($_POST['signup'])) {
 } else {
     die("Invalid request.");
 }
-
+?>

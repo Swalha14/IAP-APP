@@ -29,7 +29,7 @@ class form
     private function submit_btn($value,$name)
     {
         ?>
-        <button  class="btn btn-primary btn-lg"  type="button" name="<?php echo $name;?>" value="<?php echo $value; ?>"><?php echo $value; ?></button>
+        <button  class="btn btn-primary btn-lg"  type="submit" name="<?php echo $name;?>" value="<?php echo $value; ?>"><?php echo $value; ?></button>
         <?php
     }
 
